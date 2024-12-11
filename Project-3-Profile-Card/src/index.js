@@ -58,7 +58,7 @@ const skills= [
 function App(){
   return(
     <div className='card'>
-      <Avatar avatar="focaccia.jpg"/>
+      <Avatar avatar="sinega.jpg"/>
       <div className='data'>
         <Intro name="Sinega E" role="Full Stack Developer" intro="A passionate developer with a knack for creating seamless web applications using modern technologies."/>
         <SkillList/>
@@ -69,8 +69,11 @@ function App(){
 
 
 function Avatar(props){
-  return <img className='avatar' src={props.avatar} alt="avatar"/>
-}
+  return (
+    <div className='avatar'>
+        <img  src={props.avatar} alt="avatar"/>
+    </div>
+)}
 function Intro(props){
   return(
     <div className='intro'>
